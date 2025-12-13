@@ -1,4 +1,5 @@
 # pneumonia-detection-tl
+
 Pneumonia Detection Using Transfer Learning
 
 This project focuses on the automated detection of pneumonia from chest X-ray images using deep learning and transfer learning techniques. Instead of training a convolutional neural network from scratch, a pre-trained model is leveraged to extract meaningful features from medical images, improving performance while reducing training time and computational cost.
