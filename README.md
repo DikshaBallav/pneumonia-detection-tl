@@ -18,6 +18,7 @@ APPROACH:
 * The model classifies chest X-ray images into-
 
 Pneumonia
+
 Normal
 
 * Applied image preprocessing and data augmentation to improve generalization.
