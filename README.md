@@ -1,6 +1,8 @@
 # pneumonia-detection-tl
 
-Pneumonia Detection Using Transfer Learning
+Pneumonia Detection Using Transfer Learning (VGG16)
+
+PROJECT OVERVIEW: 
 
 This project focuses on the automated detection of pneumonia from chest X-ray images using deep learning and transfer learning techniques. Instead of training a convolutional neural network from scratch, a pre-trained model is leveraged to extract meaningful features from medical images, improving performance while reducing training time and computational cost.
 
@@ -21,26 +23,78 @@ Normal
 * Applied image preprocessing and data augmentation to improve generalization.
 
 KEY FEATURES:
+* Binary image classification: Pneumonia vs Normal
 
-1)Transfer learning for efficient and accurate mdical image classification
+* Transfer Learning using pre-trained VGG16
 
-2)Reduced overfitting compared to training a CNN from scratch
+* Image preprocessing and visualization
 
-3)Binary classification with performance evaluation using accuracy and loss metrics
+* Model training and evaluation
 
-4)Scalable and adaptable for other medical imaging tasks
-
+* Performance metrics: Accuracy, Precision, Recall
+  
 TECHNOLOGIES USED:
 
 * Python
 
 * TensorFlow / Keras
 
-* Pre-trained CNN models (Transfer Learning)
+* VGG16 (Pre-trained on ImageNet)
 
-* NumPy, Matplotlib
+* NumPy
+  
+* Matplotlib
 
-* Image preprocessing and augmentation techniques
+* Scikit-learn
+
+DATASET:
+
+The project uses a Chest X-Ray dataset organized into training and testing directories with two classes:
+
+* PNEUMONIA
+
+* NORMAL
+
+The dataset is not included in the repository due to size constraints.
+
+PROJECT WORKFLOW:
+1) Data Loading & Visualization:
+* Load chest X-ray images
+* Visualize sample images from each class
+   
+2) Data Preprocessing:
+* Image resizing to 224 × 224
+* Normalization
+* Batch generation using Keras utilities
+
+3) Model Architecture:
+* VGG16 as base model (pre-trained weights)
+* Freezing convolutional layers
+* Custom fully connected layers for classification
+
+4) Model Training:
+*Binary classification setup
+* Optimizer: Adam
+* Loss function: Binary Crossentropy
+
+5) Model Evaluation:
+* Accuracy
+* Precision
+* Recall
+
+MODEL ARCHITECTURE:
+
+Input Image (224×224×3)
+    ↓
+VGG16 Base Model (Frozen)
+    ↓
+Flatten Layer
+    ↓
+Dense Layer (ReLU)
+    ↓
+Dense Layer (Sigmoid)
+    ↓
+Binary Output (Pneumonia / Normal)
 
 RESULTS:
 
@@ -49,3 +103,5 @@ The model demonstrates strong performance in detecting pneumonia cases from ches
 CONCLUSION:
 
 This project shows that transfer learning is a powerful and practical approach for medical image classification, especially when dataset size and computational resources are limited. The system can serve as a supportive tool for healthcare professionals in early pneumonia detection.
+
+
