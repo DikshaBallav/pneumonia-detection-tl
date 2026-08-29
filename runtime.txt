@@ -1,1 +1,1 @@
-Set Python 3.12 for deployment
+PYTHON_VERSION=3.12.0
