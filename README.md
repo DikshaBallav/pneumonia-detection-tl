@@ -105,4 +105,8 @@ CONCLUSION:
 
 This project shows that transfer learning is a powerful and practical approach for medical image classification, especially when dataset size and computational resources are limited. The system can serve as a supportive tool for healthcare professionals in early pneumonia detection.
 
+## 🚀 Live Demo
+
+👉 **[Pneumonia Detection — Live Demo](https://pneumonia-detection-tl-nrg4poshj7z6aynduiealq.streamlit.app/)**
+
 
