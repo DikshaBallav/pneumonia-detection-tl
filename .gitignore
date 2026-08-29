@@ -1,0 +1,5 @@
+pneumonia_vgg16.keras
+pneumonia_vgg16.weights.h5
+__pycache__/
+.venv/
+env/
